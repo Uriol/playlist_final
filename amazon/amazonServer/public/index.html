@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playlist</title>
+    <meta charset='utf-8'>
+    <meta content='Middleman' name='description'>
+    <meta content='on' http-equiv='cleartype'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, user-scalable=no' name='viewport'>
+    <link href='stylesheets/style.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body>
+    <div id='loading' class='inActive'>
+      <h1>Loading...</h1>
+    </div>
+    <div class='inActive' id='opacityLayer'>
+      <div class='inActive' id='searchResults'>
+        <div class='inActive' id='resultsList'></div>
+      </div>
+    </div>
+    <div class='scroll' id='wrapper'>
+      <div class='active' id='home'>
+        <div id='powered_by'>
+          <h1>
+            Powered by
+          </h1>
+          <div id='soundclod_logo'></div>
+        </div>
+        <div id='enter'>
+          <div id='sign_up'>
+            <input id='usernameInput' name='username' placeholder='Enter your name' type='input'>
+          </div>
+          <div id='log_in'>
+            <h1>
+              Go!
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class='inActive' id='create_joinPage'>
+        <div id='topName'>
+          <p>
+            Hi,
+            <span>Username</span>
+          </p>
+        </div>
+        <div id='sessionsAround'>
+          <h1>
+            SESSIONS AROUND YOU
+          </h1>
+          <div class='filet'></div>
+          <div class='active' id='sessionsOn'>
+            <!-- <div class='session'>
+              <h1>
+                
+              </h1>
+              <div class='filet'></div>
+            </div> -->
+          </div>
+          <div class='inActive' id='noSessionsAround'>
+            <h1>
+              No sessions around
+            </h1>
+          </div>
+        </div>
+        <div id='createNewSession'>
+          <h1>
+            CREATE A NEW SESSION
+          </h1>
+          <div class='filet'></div>
+          <input id='sessionName' name='username' placeholder='Enter a name for this session' type='input'>
+          <div id='createButton'>
+            <h1>
+              Create session
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class='inActive' id='sessionPage'>
+        <div class='active' id='top'>
+          <div id='exit'></div>
+          <div id='partyName'>
+            <h1>
+              
+            </h1>
+          </div>
+          <div id='addSongs'>
+            <div class='active' id='addSongsIcon'></div>
+          </div>
+        </div>
+        <div class='inActive' id='noSongs'>
+          <h1>
+            No Songs
+          </h1>
+        </div>
+        <div class='inActive' id='songs'>
+          <div id='cover'></div>
+          <div id='songText'>
+            <h1>
+              
+            </h1>
+            <h2>
+              
+            </h2>
+          </div>
+          <div id='margin'></div>
+          <div id='soundwave'></div>
+          <div id='background'></div>
+          <div id='progress'></div>
+        </div>
+        <div id='bottom_menu'>
+          <div id='dislike'></div>
+          <div id='like'></div>
+          <div id='audio'></div>
+          <div id='refresh'></div>
+        </div>
+      </div>
+      <div class='inActive active' id='searchPage'>
+        <ul>
+          <li id='searchIcon'></li>
+          <li id='input'></li>
+          <input id='searchInput' name='searchBar' placeholder='Search for songs or artists' type='search'>
+          <li id='closeSearch'></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script src='http://ec2-107-20-92-81.compute-1.amazonaws.com:3333/socket.io/socket.io.js'></script>
+    <script src='javascripts/jquery-1.8.0.min.js'></script>
+    <script src='javascripts/geohash.js'></script>
+    <script src='http://connect.soundcloud.com/sdk.js'></script>
+    <script src='javascripts/soundmanager2-jsmin.js'></script>
+    <script src='javascripts/sessionPage.js'></script>
+    <script src='javascripts/enter_loadSessions.js'></script>
+    <script src='javascripts/create_joinSession.js'></script>
+    <script src='javascripts/player.js'></script>
+    
+    
+  </body>
+</html>

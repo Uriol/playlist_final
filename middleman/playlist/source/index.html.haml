@@ -1,0 +1,107 @@
+
+#opacityLayer.inActive
+	#searchResults.inActive
+		#resultsList.inActive
+
+
+
+#wrapper.scroll
+
+	#home.inActive	
+		#powered_by
+			%h1
+				Powered by
+			#soundclod_logo
+
+		#enter
+			#sign_up
+				%input{name: "username", placeholder: "Enter your name", type: "input", id:"usernameInput"}
+			#log_in
+				%h1
+					Go!
+
+
+	#create_joinPage.inActive
+		#topName
+			%p
+				Hi,
+				%span Username
+
+		#sessionsAround
+			%h1
+				SESSIONS AROUND YOU
+			.filet
+
+			#sessionsOn.active 
+				.session
+					%h1
+						Uri's Rooftop!
+					.filet
+
+			#noSessionsAround.inActive
+				%h1
+					No sessions around
+
+				
+		#createNewSession
+			%h1
+				CREATE A NEW SESSION
+			.filet
+
+			%input#sessionName{name: "username", placeholder: "Enter a name for this session", type: "input"}
+
+			#createButton
+				%h1
+					Create session
+
+
+
+
+
+
+
+	#sessionPage.active 
+		#top.active
+			#exit
+			#partyName
+				%h1
+					Uri's House!
+			#addSongs
+				#addSongsIcon.active
+
+		#noSongs.inActive
+			%h1
+				No Songs
+
+
+		#songs.active
+
+			#cover
+			#songText
+				%h1
+					The Cat Empire - Still young 
+				%h2
+					By Oriol Bella
+
+			
+			#margin
+			#soundwave
+			#background
+			#progress
+
+		#bottom_menu
+			#dislike
+			#like
+			#audio
+			#refresh
+
+	#searchPage.inActive.active
+		%ul
+			%li#searchIcon
+			%li#input
+			%input{name: "searchBar", placeholder: "Search for songs or artists", type: "search", id:"searchInput"}
+			%li#closeSearch
+
+
+
+	

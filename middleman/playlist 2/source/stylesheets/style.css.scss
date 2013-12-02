@@ -1,0 +1,795 @@
+// Import Base Styles
+@import "compass/reset";
+
+
+// iPhone 4 Portrait
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width : 480px)
+and (orientation : portrait)
+and (device-aspect-ratio : 2/3)
+{	
+	html {
+		width: 100%;
+		height: 100%;
+		font-family: 'Open Sans', sans-serif;
+		background-color: #181818;
+
+		body {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+
+			#home.inActive {
+				display: none;
+			}
+
+			#home.active {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-color: #181818;
+
+				#powered_by {
+					width: 100%;
+					height: 100px;
+					position: absolute;
+					
+					//margin-left: 15%;
+					margin-top: 70px;
+					text-align: center;
+
+					h1 {
+						font-size: 14px;
+						color: #F0F0F0;
+						font-weight: 400;
+					}
+
+					#soundclod_logo {
+						width: 140px;
+						height: 80px;
+						position: absolute;
+						margin-left: 50%;
+						left: -70px;
+						margin-top: 15px;
+						background: url('../images/sc_dark.png');
+						background-size: cover;
+					}
+				}
+
+				#enter {
+
+					width: 100%;
+					height: 120px;
+					
+					position: absolute;
+					margin-top: 240px;
+					// bottom: 50px;
+
+					#sign_up {
+						width: 250px;
+						height: 45px;
+						background-color: #F0F0F0;
+						//float: left;
+						position: absolute;
+						margin-left: 50%;
+						left: -125px;
+						//text-align: center;
+						// -webkit-border-radius: 5px;
+
+						input[type="input"]{
+							width: 95%;
+							position: absolute;
+							color: #181818;
+							//margin-left: -8px;
+						  -webkit-appearance: none;
+						  -moz-appearance: none;
+						  -webkit-box-sizing: content-box;
+						  -moz-box-sizing: content-box;
+						  outline:none;
+						  font-size: 16px;
+						  //background-color: red;
+						  background-color: transparent;
+						  border: transparent;
+						  // padding-left: 8px;
+						  // padding-right: 8px;
+						  padding-top: 10px;
+						  padding-bottom: 12px;
+						  text-align: center;
+						}
+
+						::-webkit-input-placeholder {
+						        color: #777;
+						        text-align: center;
+						}
+					}
+
+					#log_in {
+						margin-top: 75px;
+						width: 250px;
+						height: 45px;
+						position: absolute;
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,102,0,1)), color-stop(100%,rgba(255,51,0,1)));						
+						position: absolute;
+						//float: left;
+						margin-left: 50%;
+						left: -125px;
+						text-align: center;
+						//-webkit-border-radius: 5px;
+						h1 {
+							margin-top: 13px;
+							color: #F0F0F0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// iPhone 4 Landscape
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width : 480px)
+and (orientation : landscape)
+and (min-aspect-ratio : 2/3) 
+// and (min-aspect-ratio: 13/9)
+//and (orientation : landscape)
+//and (orientation : portrait) 
+{
+	html {
+		width: 100%;
+		height: 100%;
+		font-family: 'Open Sans', sans-serif;
+		background-color: #181818;
+
+		body {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+
+			#home.inActive {
+				display: none;
+			}
+
+			#home.active {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-color: #181818;
+
+				#powered_by {
+					width: 25%;
+					height: 100px;
+					position: absolute;
+					
+					margin-left: 5%;
+					margin-top: 50px;
+					text-align: center;
+
+					h1 {
+						font-size: 12px;
+						color: #F0F0F0;
+						font-weight: 400;
+					}
+
+					#soundclod_logo {
+						width: 70px;
+						height: 40px;
+						position: absolute;
+						margin-left: 50%;
+						left: -35px;
+						margin-top: 15px;
+						background: url('../images/sc_dark.png');
+						background-size: cover;
+					}
+				}
+
+				#enter {
+
+					width: 50%;
+					height: 120px;
+					//background-color: red;
+					position: absolute;
+					margin-top: 50px;
+					// bottom: 50px;
+					margin-left: 40%;
+
+					#sign_up {
+						width: 100%;
+						height: 30px;
+						background-color: #F0F0F0;
+						//float: left;
+						position: absolute;
+						//margin-left: 50%;
+						//left: -125px;
+						//text-align: center;
+						// -webkit-border-radius: 5px;
+
+						input[type="input"]{
+							width: 100%;
+							position: absolute;
+							color: #181818;
+							//margin-left: -8px;
+						  -webkit-appearance: none;
+						  -moz-appearance: none;
+						  -webkit-box-sizing: content-box;
+						  -moz-box-sizing: content-box;
+						  outline:none;
+						  font-size: 12px;
+						  //background-color: red;
+						  background-color: transparent;
+						  border: transparent;
+						  // padding-left: 8px;
+						  // padding-right: 8px;
+						  padding-top: 6px;
+						  //padding-bottom: 12px;
+						  text-align: center;
+						}
+
+						::-webkit-input-placeholder {
+						        color: #777;
+						        text-align: center;
+						}
+					}
+
+					#log_in {
+						margin-top: 45px;
+						width: 100%;
+						height: 30px;
+						position: absolute;
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,102,0,1)), color-stop(100%,rgba(255,51,0,1)));						
+						position: absolute;
+						//float: left;
+						//margin-left: 50%;
+						//left: -125px;
+						text-align: center;
+						//-webkit-border-radius: 5px;
+						h1 {
+							margin-top: 8px;
+							font-size: 12px;
+							color: #F0F0F0;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+// ========================================================================================================================
+// ========================================================================================================================
+// ========================================================================================================================
+// ========================================================================================================================
+// ========================================================================================================================
+// ========================================================================================================================
+// ========================================================================================================================
+// ========================================================================================================================
+// ========================================================================================================================
+
+
+
+
+
+// HTC Portrait
+@media only screen
+and (min-device-width: 321px)
+and (max-device-width : 640px)
+and (max-aspect-ratio: 13/9)
+//and (orientation : portrait) 
+{	
+	html {
+		width: 100%;
+		height: 100%;
+		font-family: 'Open Sans', sans-serif;
+		background-color: #181818;
+		
+		body {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+
+			#home.inActive {
+				display: none;
+			}
+
+			#home.active {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-color: #181818;
+
+				#powered_by {
+					width: 100%;
+					height: 100px;
+					position: absolute;
+					
+					//margin-left: 15%;
+					margin-top: 100px;
+					text-align: center;
+
+					h1 {
+						font-size: 14px;
+						color: #F0F0F0;
+						font-weight: 400;
+					}
+
+					#soundclod_logo {
+						width: 140px;
+						height: 80px;
+						position: absolute;
+						margin-left: 50%;
+						left: -70px;
+						margin-top: 15px;
+						background: url('../images/sc_dark.png');
+						background-size: cover;
+					}
+				}
+
+				#enter {
+
+					width: 100%;
+					height: 120px;
+					
+					position: absolute;
+					margin-top: 350px;
+					// bottom: 50px;
+
+					#sign_up {
+						width: 250px;
+						height: 45px;
+						background-color: #F0F0F0;
+						//float: left;
+						position: absolute;
+						margin-left: 50%;
+						left: -125px;
+						//text-align: center;
+						// -webkit-border-radius: 5px;
+
+						input[type="input"]{
+							width: 100%;
+							position: absolute;
+							color: #181818;
+							//margin-left: -8px;
+						  -webkit-appearance: none;
+						  -moz-appearance: none;
+						  -webkit-box-sizing: content-box;
+						  -moz-box-sizing: content-box;
+						  outline:none;
+						  font-size: 16px;
+						  //background-color: red;
+						  background-color: transparent;
+						  border: transparent;
+						  // padding-left: 8px;
+						  // padding-right: 8px;
+						  padding-top: 10px;
+						  padding-bottom: 12px;
+						  text-align: center;
+						}
+
+						::-webkit-input-placeholder {
+						        color: #777;
+						        text-align: center;
+						}
+					}
+
+					#log_in {
+						margin-top: 75px;
+						width: 250px;
+						height: 45px;
+						position: absolute;
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,102,0,1)), color-stop(100%,rgba(255,51,0,1)));						
+						position: absolute;
+						//float: left;
+						margin-left: 50%;
+						left: -125px;
+						text-align: center;
+						//-webkit-border-radius: 5px;
+						h1 {
+							margin-top: 13px;
+							color: #F0F0F0;
+						}
+					}
+				}
+			}
+
+
+			// Session page --------------------------------------------------
+
+			#sessionPage.inActive {
+				display: none;
+			}
+
+			#sessionPage.active {
+				background-color: #F0F0F0 ;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+
+				#top.inActive {
+					//display: none;
+					position: fixed;
+					z-index: 999;
+					width: 100%;
+					top: 0;
+					background-color: #181818;
+					height: 50px;
+					#partyName {
+						display: none;
+					}
+					#addSongs{
+						display: none;
+					}
+				}
+
+				#top.active {
+					//position: absolute;
+					position: fixed;
+					z-index: 999;
+					width: 100%;
+					top: 0;
+					background-color: #202020;
+					height: 50px;
+
+					#exit {
+						position: absolute;
+						width: 50px;
+						height: 50px;
+						background: url('../images/exit2.png');
+						background-size: cover;
+
+					}
+
+					#partyName {
+						//background-color: red;
+						width: 70%;
+						margin-left: 15%;
+						position: absolute;
+						text-align: center;
+
+						h1 {
+							padding-top: 16.5px;
+							color: white;
+							font-weight: 600;
+							font-size: 17px;
+						}
+
+
+						// ul {
+						// 		padding-top: 16.5px;
+
+						// 		li.partyName {
+						// 			display: inline;
+						// 			//letter-spacing: 0.px;
+						// 			padding-right: 20px;
+						// 			//padding-bottom: 15px;
+						// 			color: white;
+						// 			font-weight: 600;
+						// 			font-size: 17px;
+						// 		}
+						// 		li.number {
+						// 			display: inline;
+						// 			color: #808080    ;
+						// 			font-weight: 600;
+						// 			font-size: 17px;
+						// 			margin-right: 5px;
+						// 		}
+						// 		li.peopleIcon{
+						// 			//margin-left: -5px;
+						// 			display: inline;
+						// 			//padding-right: 20px;
+						// 			#peopleIcon{
+						// 				margin-left: 0px;
+						// 				margin-top: 2px;
+						// 				display: inline;
+						// 				position: absolute;
+						// 				width: 13px;
+						// 				height: 13px;
+						// 				background: url('../images/peopleIcon.png');
+						// 				background-size: cover;
+						// 			}
+						// 		}
+						// 	}
+
+					}
+
+					#addSongs {
+						float: right;
+						width: 50px;
+						height: 50px;
+						//background-color: #FF6600;
+						//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,51,0,1)), color-stop(41%,rgba(255,102,0,1)), color-stop(55%,rgba(255,102,0,1)), color-stop(100%,rgba(255,51,0,1)));
+
+						#addSongsIcon.active {
+							height: 22px;
+							width: 22px;
+							position: absolute;
+							margin-left: 14px;
+							margin-top: 14px;
+							background: url(../images/addSong3.png);
+							background-size: cover;
+						}
+
+						#addSongsIcon.inActive {
+							display: none;
+						}
+					}
+				}
+
+				#noSongs.inActive {
+					display: none;
+				}
+				#noSongs.active {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					text-align: center;
+
+					h1 {
+						margin-top: 250px;
+						font-size: 20px;
+						color: #909090;
+					}
+
+					
+				}
+
+				#songs.inActive {
+					display: none;
+				}
+
+				#songs.active {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					text-align: center;
+					
+
+					h1 {
+						margin-top: 70px;
+						padding-left: 5%;
+						padding-right: 5%;
+						font-weight: 800;
+						font-size: 16px;
+						color: #202020;
+						line-height: 20px;
+					}
+
+					h2 {
+						//text-align: center;
+						padding-top: 7px;
+						padding-left: 5%;
+						padding-right: 5%;
+						padding-bottom: 15px;
+						font-size: 15px;
+						color: #888888 ;
+						font-weight: 600;
+					}
+
+					#cover {
+						// width: 90%;
+						// padding-bottom: 90%;
+						// margin-left: 5%;
+						width: 100%;
+						padding-bottom: 100%;
+						position: absolute;
+						margin-top: 0px;
+						//bottom: 60px;
+						background: url('http://i1.sndcdn.com/artworks-000039445610-ue5k8b-large.jpg?8063923');
+						background-size: cover;
+					}
+
+					#margin {
+						width: 100%;
+						height: 5px;
+						position: absolute;
+						bottom: 110px;
+						background-color: #F0F0F0;
+					}
+
+					#soundwave {
+						z-index: 9999;
+						width: 100%;
+						height: 50px;
+						position: absolute;
+						bottom: 60px;
+						background: url('../images/soundwave.png');
+						background-size: 100% 200%;
+					}
+
+					#background {
+						width: 100%;
+						height: 50px;
+						position: absolute;
+						bottom: 60px;
+						background-color: #202020;
+					}
+
+					#progress {
+						width: 35%;
+						position: absolute;
+						bottom: 60px;
+						height: 50px;
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,51,0,1)), color-stop(41%,rgba(255,102,0,1)), color-stop(55%,rgba(255,102,0,1)), color-stop(100%,rgba(255,51,0,1)));
+					}
+				}
+
+				#bottom_menu {
+					width: 100%;
+					background-color: #202020;
+					//background-color: #f0f0f0;
+					height: 60px;
+					bottom: 0;
+					position: absolute;
+
+					#dislike {
+						width: 23px;
+						padding-bottom: 23px;
+						float: left;
+						background: url('../images/dislike.png');
+						background-size: cover;
+						margin-top: 18px;
+						margin-left: 14.4%;
+					}
+
+					#like {
+						width: 23px;
+						padding-bottom: 23px;
+						float: left;
+						background: url('../images/like.png');
+						background-size: cover;
+						margin-top: 18px;
+						margin-left: 14.4%;
+					}
+					#audio {
+						width: 27px;
+						padding-bottom: 23px;
+						float: left;
+						background: url('../images/audioOFF.png');
+						background-size: cover;
+						margin-top: 18px;
+						margin-left: 14.4%;
+					}
+					#refresh {
+						width: 23px;
+						padding-bottom: 23px;
+						float: left;
+						background: url('../images/refresh2.png');
+						background-size: cover;
+						margin-top: 18px;
+						margin-left: 14.4%;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+// HTC Landscape
+@media only screen
+and (min-device-width: 321px)
+and(max-device-width : 640px)
+and (min-aspect-ratio: 13/9)  {
+	html {
+		width: 100%;
+		height: 100%;
+		font-family: 'Open Sans', sans-serif;
+		background-color: #181818;
+		
+		body {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+
+			#home.inActive {
+				display: none;
+			}
+
+			#home.active {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-color: #181818;
+
+				#powered_by {
+					width: 50%;
+					height: 100px;
+					position: absolute;
+					
+					//margin-left: 15%;
+					margin-top: 90px;
+					text-align: center;
+
+					h1 {
+						font-size: 14px;
+						color: #F0F0F0;
+						font-weight: 400;
+					}
+
+					#soundclod_logo {
+						width: 140px;
+						height: 80px;
+						position: absolute;
+						margin-left: 50%;
+						left: -70px;
+						margin-top: 15px;
+						background: url('../images/sc_dark.png');
+						background-size: cover;
+					}
+				}
+
+				#enter {
+
+					width: 50%;
+					height: 120px;
+					
+					position: absolute;
+					margin-top: 90px;
+					// bottom: 50px;
+					margin-left: 45%;
+
+					#sign_up {
+						width: 250px;
+						height: 45px;
+						background-color: #F0F0F0;
+						//float: left;
+						position: absolute;
+						margin-left: 50%;
+						left: -125px;
+						//text-align: center;
+						// -webkit-border-radius: 5px;
+
+						input[type="input"]{
+							width: 100%;
+							position: absolute;
+							color: #181818;
+							//margin-left: -8px;
+						  -webkit-appearance: none;
+						  -moz-appearance: none;
+						  -webkit-box-sizing: content-box;
+						  -moz-box-sizing: content-box;
+						  outline:none;
+						  font-size: 16px;
+						  //background-color: red;
+						  background-color: transparent;
+						  border: transparent;
+						  // padding-left: 8px;
+						  // padding-right: 8px;
+						  padding-top: 10px;
+						  padding-bottom: 12px;
+						  text-align: center;
+						}
+
+						::-webkit-input-placeholder {
+						        color: #777;
+						        text-align: center;
+						}
+					}
+
+					#log_in {
+						margin-top: 75px;
+						width: 250px;
+						height: 45px;
+						position: absolute;
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,102,0,1)), color-stop(100%,rgba(255,51,0,1)));						
+						position: absolute;
+						//float: left;
+						margin-left: 50%;
+						left: -125px;
+						text-align: center;
+						//-webkit-border-radius: 5px;
+						h1 {
+							margin-top: 13px;
+							color: #F0F0F0;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}

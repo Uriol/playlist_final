@@ -36,7 +36,7 @@ socket.on('failed creating session', function(){
 
 
 // Join session
-$('.session').live('click', 'body', function(){
+$('#sessionsOn').on('click', '.session',function(){
 
 	userData.session_ID = $(this).data('session_id');
 	userData.sessionName = $(this).text();
@@ -46,6 +46,8 @@ $('.session').live('click', 'body', function(){
 	socket.emit('joinning session', userData);
 
 });
+
+
 
 // Recieve success
 socket.on('success joinning session', function(){

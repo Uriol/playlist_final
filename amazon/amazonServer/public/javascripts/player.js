@@ -191,13 +191,15 @@ function noMoreSongs(){
 	$('#songs').removeClass('active').addClass('inActive');
 }
 
-// var date = new Date().getTime();
-// console.log(date);
+// Recieve song not added session removed
+socket.on('song not added / session removed', function(){
+	alert("The song couldn't be added because the session was removed. Refresh the page." );
+}) 
 
-// setTimeout(function(){
-// 	var date2 = new Date().getTime();
-// 	console.log(date2);
-// },2000);
+// Recieve session removed on refresh
+socket.on('session removed', function(){
+	alert("This session was removed. Refresh the page.")
+})
 
 
 

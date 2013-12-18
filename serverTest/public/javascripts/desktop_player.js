@@ -2,6 +2,7 @@
 var socket = io.connect('http://localhost:8080');
 
 var song_to_play = {};
+var playing = false;
 
 // Check for geolocation support
 if (navigator.geolocation){
@@ -93,6 +94,11 @@ socket.on('success joinning session for desktop', function(){
 // Recieve songs -------------------------------------------------------
 socket.on('play this song', function(result){
 
+	if (playing == true){
+		songPlaying.destruct();
+		restartProgressBar();
+	}
+
 	$('#noSongs').removeClass('active').addClass('inActive');
 	$('#songPlaying').removeClass('inActive').addClass('active');
 
@@ -132,8 +138,48 @@ function loadSong(){
 
 		onload : function(){
 			console.log('song loaded');
+			refreshProgressBar();
 			songPlaying.play();
+			playing = true;
+		},
+		onfinish : function(){
+			displayNoSongs();
+			songPlaying.destruct();
+			playing = false;
+			restartProgressBar();
 		}
 
 	});
+}
+
+
+// Actualize progress bar
+function refreshProgressBar(){
+	
+	var progress = 0;
+
+	console.log(song_to_play.duration);  
+	var time = 100;
+	var difference = (100/song_to_play.duration)*time;
+	
+	
+	progressBarInterval = setInterval(function(){
+
+		progress = progress+difference;
+		
+		$('#progress').css('width', progress + '%');
+
+	}, time);
+
+
+}
+
+function restartProgressBar(){
+	clearInterval(progressBarInterval);
+	$('#progress').css('width', '0%');
+}
+
+function displayNoSongs(){
+	$('#noSongs').removeClass('inActive').addClass('active');
+	$('#songPlaying').removeClass('active').addClass('inActive');
 }

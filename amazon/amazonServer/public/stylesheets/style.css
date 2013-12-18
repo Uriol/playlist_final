@@ -54,40 +54,121 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (device-aspect-ratio: 2 / 3) {
+
+
+
+/* iPhone 4 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait)  {
   /* line 12, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
-  html {
+   html {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: #181818; }
-    /* line 18, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+    background-color: #F0F0F0; }
+    /* line 289, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
     html body {
       width: 100%;
       height: 100%;
       position: absolute; }
-      /* line 23, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #loading.inActive {
+        display: none;}
+      html body #loading.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #181818;  
+        text-align: center;
+      }
+      html body #loading.active h1 {
+        font-size: 16px;
+        color: white;
+        margin-top: 100px;
+      }
+      /* line 295, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #opacityLayer.inActive {
+        display: none; }
+      /* line 299, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #opacityLayer.active {
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        opacity: 0.97;
+        position: absolute; }
+        /* line 308, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.inActive {
+          display: none; }
+        /* line 312, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.active {
+          overflow-y: scroll;
+          width: 100%;
+          height: 100%;
+          background-color: #111;
+          opacity: 0.97;
+          position: absolute; }
+        /* line 324, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.inActive {
+          display: none; }
+        /* line 328, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.active {
+          z-index: 9999999;
+          width: 100%;
+          margin-top: 55px;
+          position: absolute;
+          color: white; }
+          /* line 338, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .song {
+            width: 90%;
+            float: left;
+            height: 55px;
+            margin-bottom: 10px;
+            margin-left: 5%; }
+          /* line 348, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          
+          /* line 352, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .cover {
+            float: left; }
+          /* line 356, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active h1 {
+            float: left;
+            max-width: 210px;
+            margin-top: 10px;
+            vertical-align: middle;
+            margin-left: 10px; }
+      /* line 368, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #wrapper.scroll {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      /* line 374, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #wrapper.noScroll {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+      /* line 381, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
       html body #home.inActive {
         display: none; }
-      /* line 27, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      /* line 385, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
       html body #home.active {
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: #181818; }
-        /* line 33, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        background-color: #F0F0F0; }
+        /* line 391, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
         html body #home.active #powered_by {
           width: 100%;
           height: 100px;
           position: absolute;
+          margin-left: 0;
           margin-top: 70px;
           text-align: center; }
-          /* line 42, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          /* line 400, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by h1 {
             font-size: 14px;
-            color: #F0F0F0;
+            color: #222;
             font-weight: 400; }
-          /* line 48, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          /* line 406, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by #soundclod_logo {
             width: 140px;
             height: 80px;
@@ -97,23 +178,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
             margin-top: 15px;
             background: url("../images/sc_dark.png");
             background-size: cover; }
-        /* line 60, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        /* line 418, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
         html body #home.active #enter {
           width: 100%;
           height: 120px;
           position: absolute;
-          margin-top: 240px; }
-          /* line 69, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          margin-left: 0;
+          margin-top: 250px; }
+          /* line 428, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #enter #sign_up {
-            width: 250px;
+            width: 70%;
             height: 45px;
             background-color: #F0F0F0;
             position: absolute;
-            margin-left: 50%;
-            left: -125px; }
-            /* line 80, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            margin-left: 15%; }
+            /* line 439, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
             html body #home.active #enter #sign_up input[type="input"] {
-              width: 95%;
+              width: 93%;
               position: absolute;
               color: #181818;
               -webkit-appearance: none;
@@ -122,37 +203,449 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
               -moz-box-sizing: content-box;
               outline: none;
               font-size: 16px;
-              background-color: transparent;
+              background-color: white;
               border: transparent;
               padding-top: 10px;
               padding-bottom: 12px;
               text-align: center; }
-            /* line 101, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            /* line 460, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
             html body #home.active #enter #sign_up ::-webkit-input-placeholder {
               color: #777;
               text-align: center; }
-          /* line 107, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          /* line 466, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #enter #log_in {
             margin-top: 75px;
-            width: 250px;
+            width: 70%;
             height: 45px;
             position: absolute;
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6600), color-stop(100%, #ff3300));
             position: absolute;
-            margin-left: 50%;
-            left: -125px;
+            margin-left: 15%;
             text-align: center; }
-            /* line 119, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            /* line 478, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
             html body #home.active #enter #log_in h1 {
+              font-size: 16px;
               margin-top: 13px;
-              color: #F0F0F0; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (min-aspect-ratio: 2 / 3) {
+              color: #F0F0F0; }
+      /* line 490, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #sessionPage.inActive {
+        display: none; }
+      /* line 494, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #sessionPage.active {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 100%;
+        position: absolute; }
+        /* line 500, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.inActive {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          top: 0;
+          height: 50px; }
+          /* line 508, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #partyName {
+            display: none; }
+          /* line 511, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #addSongs {
+            display: none; }
+        /* line 516, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.active {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          top: 0;
+          background-color: #F0F0F0;
+          height: 50px; }
+          /* line 525, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #exit {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url("../images/exit6.png");
+            background-size: cover; }
+          /* line 534, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #partyName {
+            width: 65%;
+            margin-left: 50px;
+            position: absolute; }
+            /* line 540, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #partyName h1 {
+              padding-top: 16.5px;
+              color: #202020;
+              font-weight: 700;
+              font-size: 17px; }
+          /* line 552, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #addSongs {
+            float: right;
+            width: 50px;
+            height: 50px; }
+            /* line 559, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.active {
+              height: 25px;
+              width: 25px;
+              position: absolute;
+              margin-left: 10px;
+              margin-top: 14px;
+              background: url(../images/add4.png);
+              background-size: cover; }
+            /* line 569, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.inActive {
+              display: none; }
+        /* line 575, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.inActive {
+          display: none; }
+        /* line 578, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.active {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 584, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #noSongs.active h1 {
+            margin-top: 250px;
+            font-size: 20px;
+            color: #909090; }
+        /* line 593, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.inActive {
+          display: none; }
+        /* line 597, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.active {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 603, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #songText {
+            width: 100%;
+            position: absolute;
+            bottom: 115px;
+            background-color: #f0f0f0; }
+            /* line 608, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h1 {
+              padding-top: 10px;
+              padding-left: 5%;
+              padding-right: 5%;
+              font-weight: 700;
+              font-size: 17px;
+              color: #202020;
+              line-height: 20px; }
+            /* line 618, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h2 {
+              padding-top: 7px;
+              padding-left: 5%;
+              padding-right: 5%;
+              padding-bottom: 10px;
+              font-size: 15px;
+              color: #888888;
+              font-weight: 600; }
+          /* line 630, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #cover {
+            width: 90%;
+            padding-bottom: 90%;
+            margin-left: 5%;
+            margin-top: 30px;
+            
+            background-size: cover; }
+          /* line 643, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #margin {
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            bottom: 110px;
+            background-color: #F0F0F0; }
+          /* line 651, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #soundwave {
+            z-index: 9999;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 60px;
+            
+            background-size: 100% 200%; }
+          /* line 661, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #background {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 60px;
+            background-color: #202020; }
+          /* line 669, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #progress {
+            width: 0%;
+            position: absolute;
+            bottom: 60px;
+            height: 50px;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3300), color-stop(41%, #ff6600), color-stop(55%, #ff6600), color-stop(100%, #ff3300)); }
+        /* line 678, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #bottom_menu {
+          width: 100%;
+          background-color: #202020;
+          height: 60px;
+          bottom: 0;
+          position: absolute; }
+          /* line 686, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #dislike {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/dislike.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+          /* line 696, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #like {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/like.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+          /* line 705, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #audio {
+            width: 27px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/audioOFF.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+          /* line 714, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #refresh {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/refresh2.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+      /* line 728, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #searchPage.inActive {
+        display: none; }
+      /* line 732, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #searchPage.active {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        background-color: #f0f0f0;
+        z-index: 999999; }
+        /* line 739, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ul {
+          margin-top: 10px; }
+        /* line 743, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #searchIcon {
+          position: absolute;
+          z-index: 99999999;
+          width: 20px;
+          height: 20px;
+          background: url("../images/searchIcon.png");
+          background-size: cover;
+          margin-top: 5px;
+          margin-left: 5%; }
+        /* line 758, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-webkit-search-decoration,
+        html body #searchPage.active input[type="search"]::-webkit-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-decoration {
+          display: none; }
+        /* line 765, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-mox-search-decoration,
+        html body #searchPage.active input[type="search"]::-moz-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-decoration {
+          display: none; }
+        /* line 770, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ::-webkit-input-placeholder {
+          color: #777; }
+        /* line 777, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #input {
+          padding-top: 1px;
+          font-weight: 600;
+          font-size: 17px; }
+        /* line 787, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"] {
+          z-index: 9999;
+          width: 70%;
+          float: left;
+          color: #222;
+          font-weight: 600;
+          font-size: 17px;
+          margin-left: 50px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          outline: none;
+          background-color: transparent;
+          border: 0px; }
+        /* line 805, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #closeSearch {
+          z-index: 99999999999999;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 5%;
+          margin-top: 4px;
+          background: url(../images/closeSearch.png);
+          background-size: cover; }
+      /* line 823, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #create_joinPage.inActive {
+        display: none; }
+      /* line 827, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #create_joinPage.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #f0f0f0; }
+        /* line 833, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #topName {
+          display: none;
+          width: 100%;
+          height: 50px;
+          position: fixed;
+          text-align: center;
+          top: 0;
+          background-color: #181818; }
+          /* line 842, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #topName p {
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+            padding-top: 16.5px; }
+        /* line 854, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #sessionsAround {
+          width: 100%;
+          margin-top: 60px; }
+          /* line 859, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 870, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 877, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.inActive {
+            display: none; }
+          /* line 881, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.active {
+            width: 100%; }
+            /* line 885, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1 {
+              width: 90%;
+              font-weight: 600;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+            /* line 895, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1:hover {
+              background-color: #ccc; }
+            /* line 899, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session .filet {
+              width: 90%;
+              height: 1px;
+              margin-left: 5%;
+              background-color: #C0C0C0; }
+          /* line 907, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.inActive {
+            display: none; }
+          /* line 911, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.active {
+            width: 100%; }
+            /* line 914, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #noSessionsAround.active h1 {
+              width: 85%;
+              font-weight: 400;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+        /* line 930, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #createNewSession {
+          width: 100%;
+          margin-top: 50px;
+          height: 20px; }
+          /* line 935, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 944, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 951, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession input[type="input"] {
+            margin-top: 15px;
+            z-index: 9999;
+            width: 85%;
+            position: absolute;
+            color: #111;
+            margin-left: 7.5%;
+            left: -10px;
+            padding: 15px 10px 15px 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            outline: none;
+            font-size: 16px;
+            background-color: white;
+            border: 0px; }
+          /* line 972, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession #createButton {
+            width: 85%;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            margin-left: 7.5%;
+            left: -10px;
+            position: absolute;
+            margin-top: 80px;
+            background-color: #111;
+            text-align: center; }
+            /* line 986, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #createNewSession #createButton h1 {
+              font-size: 16px;
+              color: white;
+              margin-left: -10px; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (device-aspect-ratio: 2 / 3) {
   /* line 141, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
   html {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: #181818; }
+    background-color: #F0F0F0; }
     /* line 147, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
     html body {
       width: 100%;
@@ -166,28 +659,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: #181818; }
+        background-color: #F0F0F0; }
         /* line 162, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
         html body #home.active #powered_by {
           width: 25%;
           height: 100px;
           position: absolute;
           margin-left: 5%;
-          margin-top: 50px;
+          margin-top: 70px;
           text-align: center; }
           /* line 171, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by h1 {
-            font-size: 12px;
-            color: #F0F0F0;
+            font-size: 14px;
+            color: #222;
             font-weight: 400; }
           /* line 177, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by #soundclod_logo {
-            width: 70px;
-            height: 40px;
+            width: 91px;
+            height: 52px;
             position: absolute;
             margin-left: 50%;
-            left: -35px;
-            margin-top: 15px;
+            left: -45.5px;
+            margin-top: 25px;
             background: url("../images/sc_dark.png");
             background-size: cover; }
         /* line 189, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
@@ -195,7 +688,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           width: 50%;
           height: 120px;
           position: absolute;
-          margin-top: 50px;
+          margin-top: 60px;
           margin-left: 40%; }
           /* line 199, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #enter #sign_up {
@@ -205,7 +698,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
             position: absolute; }
             /* line 210, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
             html body #home.active #enter #sign_up input[type="input"] {
-              width: 100%;
+              width: 95%;
               position: absolute;
               color: #181818;
               -webkit-appearance: none;
@@ -213,10 +706,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
               -webkit-box-sizing: content-box;
               -moz-box-sizing: content-box;
               outline: none;
-              font-size: 12px;
-              background-color: transparent;
+              font-size: 14px;
+              background-color: white;
               border: transparent;
-              padding-top: 6px;
+              padding-top: 15px;
+              padding-bottom: 15px;
               text-align: center; }
             /* line 231, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
             html body #home.active #enter #sign_up ::-webkit-input-placeholder {
@@ -224,18 +718,493 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
               text-align: center; }
           /* line 237, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #enter #log_in {
-            margin-top: 45px;
+            margin-top: 70px;
             width: 100%;
-            height: 30px;
+            height: 45px;
             position: absolute;
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6600), color-stop(100%, #ff3300));
             position: absolute;
             text-align: center; }
             /* line 249, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
             html body #home.active #enter #log_in h1 {
-              margin-top: 8px;
-              font-size: 12px;
-              color: #F0F0F0; } }
+              margin-top:15px;
+              font-size: 14px;
+              color: #F0F0F0; } 
+        html body #loading.inActive {
+          display: none;}
+          html body #loading.active {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: #181818;  
+            text-align: center;
+          }
+          html body #loading.active h1 {
+            font-size: 16px;
+            color: white;
+            margin-top: 100px;
+          }
+
+
+          /* Create Join page Iphone 4 Landscape ------------------------------------------------------------ */
+          html body #create_joinPage.inActive {
+        display: none; }
+      /* line 1549, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #create_joinPage.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #f0f0f0; }
+        /* line 1555, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #topName {
+          display: none;
+          width: 100%;
+          height: 50px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          background-color: #181818; }
+          /* line 1564, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #topName p {
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+            padding-top: 16.5px; }
+        /* line 1576, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #sessionsAround {
+          width: 45%;
+          float: left;
+          margin-top: 50px; }
+          /* line 1582, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 1593, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 1600, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.inActive {
+            display: none; }
+          /* line 1604, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.active {
+            width: 100%; }
+            /* line 1608, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1 {
+              width: 90%;
+              font-weight: 600;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+            /* line 1618, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1:hover {
+              background-color: #ccc; }
+            /* line 1622, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session .filet {
+              width: 90%;
+              height: 1px;
+              margin-left: 5%;
+              background-color: #C0C0C0; }
+          /* line 1630, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.inActive {
+            display: none; }
+          /* line 1634, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.active {
+            width: 100%; }
+            /* line 1637, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #noSessionsAround.active h1 {
+              width: 85%;
+              font-weight: 400;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+        /* line 1653, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #createNewSession {
+          width: 55%;
+          float: left;
+          margin-top: 50px; }
+          /* line 1659, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 1668, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 1675, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession input[type="input"] {
+            margin-top: 15px;
+            z-index: 9999;
+            width: 80%;
+            color: #111;
+            margin-left: 5%;
+            left: -10px;
+            padding: 15px 10px 15px 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            outline: none;
+            font-size: 16px;
+            background-color: white;
+            border: 0px; }
+          /* line 1696, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession #createButton {
+            width: 80%;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            margin-left: 5%;
+            left: -10px;
+            margin-top: 20px;
+            background-color: #111;
+            text-align: center; }
+            /* line 1710, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #createNewSession #createButton h1 {
+              font-size: 16px;
+              color: white;
+              margin-left: -10px; }
+
+
+          /* Start session page iPhone 4 ------------------------------------------------------------------- */
+          html body #sessionPage.inActive {
+        display: none; }
+      /* line 1214, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #sessionPage.active {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden; }
+        /* line 1221, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.inActive {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          top: 0;
+          height: 50px; }
+          /* line 1229, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #partyName {
+            display: none; }
+          /* line 1232, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #addSongs {
+            display: none; }
+        /* line 1237, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.active {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          background-color: #F0F0F0;
+          top: 0;
+          height: 50px; }
+          /* line 1246, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #exit {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url("../images/exit6.png");
+            background-size: cover; }
+          /* line 1255, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #partyName {
+            width: 65%;
+            margin-left: 50px;
+            position: absolute; }
+            /* line 1261, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #partyName h1 {
+              padding-top: 16px;
+              color: #202020;
+              font-weight: 700;
+              font-size: 17px; }
+          /* line 1270, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #addSongs {
+            float: right;
+            width: 50px;
+            height: 50px; }
+            /* line 1277, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.active {
+              height: 25px;
+              width: 25px;
+              position: absolute;
+              margin-left: 10px;
+              margin-top: 14px;
+              background: url(../images/add4.png);
+              background-size: cover; }
+            /* line 1287, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.inActive {
+              display: none; }
+        /* line 1293, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.inActive {
+          display: none; }
+        /* line 1296, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.active {
+          width: 50%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 1302, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #noSongs.active h1 {
+            margin-top: 174px;
+            font-size: 20px;
+            color: #909090; }
+        /* line 1311, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.inActive {
+          display: none; }
+        /* line 1315, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.active {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 1322, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #songText {
+            width: 50%;
+            position: absolute;
+            margin-top: 80px;
+            margin-left: 40%; }
+            /* line 1329, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h1 {
+              padding-top: 10px;
+              padding-left: 5%;
+              padding-right: 5%;
+              font-weight: 700;
+              font-size: 17px;
+              color: #202020;
+              line-height: 20px; }
+            /* line 1339, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h2 {
+              padding-top: 7px;
+              padding-left: 5%;
+              padding-right: 5%;
+              padding-bottom: 15px;
+              font-size: 15px;
+              color: #888888;
+              font-weight: 600; }
+          /* line 1351, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #cover {
+            width: 170px;
+            height: 170px;
+            margin-top: 65px;
+            position: absolute;
+            
+
+            background-size: cover; }
+          /* line 1361, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #margin {
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            bottom: 50px;
+            background-color: #F0F0F0; }
+          /* line 1369, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #soundwave {
+            z-index: 9999;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            
+            background-size: 100% 200%; }
+          /* line 1382, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #background {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            background-color: #202020; }
+          /* line 1390, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #progress {
+            width: 0%;
+            position: absolute;
+            bottom: 0px;
+            height: 50px;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3300), color-stop(41%, #ff6600), color-stop(55%, #ff6600), color-stop(100%, #ff3300)); }
+        /* line 1400, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #bottom_menu {
+          width: 60%;
+          height: 50px;
+          margin-left: 35%;
+          margin-top: 160px;
+          position: absolute; }
+          /* line 1411, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #dislike {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/dislikeBlack.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+          /* line 1421, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #like {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/likeBlack.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+          /* line 1430, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #audio {
+            width: 27px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/audioOFFblack.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+          /* line 1439, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #refresh {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/refreshBlack2.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+
+
+
+          /* START SEARCH PAGE IPHONE 4 ------------------------------------------------------------ */
+          html body #searchPage.inActive {
+        display: none; }
+      /* line 1456, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #searchPage.active {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        background-color: #f0f0f0;
+        z-index: 999999; }
+        /* line 1463, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ul {
+          margin-top: 10px; }
+        /* line 1467, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #searchIcon {
+          position: absolute;
+          z-index: 99999999;
+          width: 20px;
+          height: 20px;
+          background: url("../images/searchIcon.png");
+          background-size: cover;
+          margin-top: 5px;
+          margin-left: 2%; }
+        /* line 1482, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-webkit-search-decoration,
+        html body #searchPage.active input[type="search"]::-webkit-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-decoration {
+          display: none; }
+        /* line 1489, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-mox-search-decoration,
+        html body #searchPage.active input[type="search"]::-moz-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-decoration {
+          display: none; }
+        /* line 1494, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ::-webkit-input-placeholder {
+          color: #777; }
+        /* line 1501, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #input {
+          padding-top: 1px;
+          font-weight: 600;
+          font-size: 17px; }
+        /* line 1511, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"] {
+          z-index: 9999;
+          width: 70%;
+          float: left;
+          color: #222;
+          font-weight: 600;
+          font-size: 17px;
+          margin-left: 50px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          outline: none;
+          background-color: transparent;
+          border: 0px; }
+        /* line 1529, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #closeSearch {
+          z-index: 99999999999999;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 2%;
+          margin-top: 4px;
+          background: url(../images/closeSearch.png);
+          background-size: cover; }
+
+        /* START SEARCH RESULTS PAGE --------------------------------------------------------------- */
+        html body #opacityLayer.inActive {
+        display: none; }
+      /* line 1025, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #opacityLayer.active {
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        opacity: 0.97;
+        position: absolute; }
+        /* line 1034, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.inActive {
+          display: none; }
+        /* line 1038, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.active {
+          overflow-y: scroll;
+          width: 100%;
+          height: 100%;
+          background-color: #111;
+          opacity: 0.97;
+          position: absolute; }
+        /* line 1050, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.inActive {
+          display: none; }
+        /* line 1054, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.active {
+          z-index: 9999999;
+          width: 100%;
+          margin-top: 55px;
+          position: absolute;
+          color: white; }
+          /* line 1064, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .song {
+            width: 90%;
+            float: left;
+            height: 55px;
+            margin-bottom: 10px;
+            margin-left: 5%; }
+          /* line 1074, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          
+          /* line 1078, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .cover {
+            float: left; }
+          /* line 1082, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active h1 {
+            float: left;
+            max-width: 450px;
+            margin-top: 10px;
+            vertical-align: middle;
+            margin-left: 10px; }
+
+
+
+
+  }
 
 
 
@@ -251,7 +1220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: #181818; }
+    background-color: #F0F0F0; }
     /* line 289, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
     html body {
       width: 100%;
@@ -342,7 +1311,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: #181818; }
+        background-color: #F0F0F0; }
         /* line 391, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
         html body #home.active #powered_by {
           width: 100%;
@@ -354,7 +1323,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           /* line 400, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by h1 {
             font-size: 14px;
-            color: #F0F0F0;
+            color: #222;
             font-weight: 400; }
           /* line 406, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by #soundclod_logo {
@@ -391,7 +1360,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
               -moz-box-sizing: content-box;
               outline: none;
               font-size: 16px;
-              background-color: transparent;
+              background-color: white;
               border: transparent;
               padding-top: 10px;
               padding-bottom: 12px;
@@ -443,6 +1412,1169 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           z-index: 999;
           width: 100%;
           top: 0;
+          background-color: #F0F0F0;
+          height: 50px; }
+          /* line 525, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #exit {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url("../images/exit6.png");
+            background-size: cover; }
+          /* line 534, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #partyName {
+            width: 65%;
+            margin-left: 50px;
+            position: absolute; }
+            /* line 540, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #partyName h1 {
+              padding-top: 16.5px;
+              color: #202020;
+              font-weight: 700;
+              font-size: 17px; }
+          /* line 552, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #addSongs {
+            float: right;
+            width: 50px;
+            height: 50px; }
+            /* line 559, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.active {
+              height: 25px;
+              width: 25px;
+              position: absolute;
+              margin-left: 10px;
+              margin-top: 14px;
+              background: url(../images/add4.png);
+              background-size: cover; }
+            /* line 569, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.inActive {
+              display: none; }
+        /* line 575, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.inActive {
+          display: none; }
+        /* line 578, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.active {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 584, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #noSongs.active h1 {
+            margin-top: 250px;
+            font-size: 20px;
+            color: #909090; }
+        /* line 593, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.inActive {
+          display: none; }
+        /* line 597, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.active {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 603, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #songText {
+            width: 100%;
+            position: absolute;
+            bottom: 115px;
+            background-color: #f0f0f0; }
+            /* line 608, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h1 {
+              padding-top: 10px;
+              padding-left: 5%;
+              padding-right: 5%;
+              font-weight: 700;
+              font-size: 17px;
+              color: #202020;
+              line-height: 20px; }
+            /* line 618, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h2 {
+              padding-top: 7px;
+              padding-left: 5%;
+              padding-right: 5%;
+              padding-bottom: 10px;
+              font-size: 15px;
+              color: #888888;
+              font-weight: 600; }
+          /* line 630, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #cover {
+            width: 90%;
+            padding-bottom: 90%;
+            margin-left: 5%;
+            margin-top: 60px;
+            
+            background-size: cover; }
+          /* line 643, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #margin {
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            bottom: 110px;
+            background-color: #F0F0F0; }
+          /* line 651, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #soundwave {
+            z-index: 9999;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 60px;
+            
+            background-size: 100% 200%; }
+          /* line 661, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #background {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 60px;
+            background-color: #202020; }
+          /* line 669, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #progress {
+            width: 0%;
+            position: absolute;
+            bottom: 60px;
+            height: 50px;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3300), color-stop(41%, #ff6600), color-stop(55%, #ff6600), color-stop(100%, #ff3300)); }
+        /* line 678, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #bottom_menu {
+          width: 100%;
+          background-color: #202020;
+          height: 60px;
+          bottom: 0;
+          position: absolute; }
+          /* line 686, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #dislike {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/dislike.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+          /* line 696, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #like {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/like.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+          /* line 705, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #audio {
+            width: 27px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/audioOFF.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+          /* line 714, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #refresh {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/refresh2.png");
+            background-size: cover;
+            margin-top: 18px;
+            margin-left: 14.4%; }
+      /* line 728, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #searchPage.inActive {
+        display: none; }
+      /* line 732, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #searchPage.active {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        background-color: #f0f0f0;
+        z-index: 999999; }
+        /* line 739, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ul {
+          margin-top: 10px; }
+        /* line 743, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #searchIcon {
+          position: absolute;
+          z-index: 99999999;
+          width: 20px;
+          height: 20px;
+          background: url("../images/searchIcon.png");
+          background-size: cover;
+          margin-top: 5px;
+          margin-left: 5%; }
+        /* line 758, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-webkit-search-decoration,
+        html body #searchPage.active input[type="search"]::-webkit-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-decoration {
+          display: none; }
+        /* line 765, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-mox-search-decoration,
+        html body #searchPage.active input[type="search"]::-moz-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-decoration {
+          display: none; }
+        /* line 770, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ::-webkit-input-placeholder {
+          color: #777; }
+        /* line 777, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #input {
+          padding-top: 1px;
+          font-weight: 600;
+          font-size: 17px; }
+        /* line 787, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"] {
+          z-index: 9999;
+          width: 70%;
+          float: left;
+          color: #222;
+          font-weight: 600;
+          font-size: 17px;
+          margin-left: 50px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          outline: none;
+          background-color: transparent;
+          border: 0px; }
+        /* line 805, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #closeSearch {
+          z-index: 99999999999999;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 5%;
+          margin-top: 4px;
+          background: url(../images/closeSearch.png);
+          background-size: cover; }
+      /* line 823, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #create_joinPage.inActive {
+        display: none; }
+      /* line 827, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #create_joinPage.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #f0f0f0; }
+        /* line 833, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #topName {
+          display: none;
+          width: 100%;
+          height: 50px;
+          position: fixed;
+          text-align: center;
+          top: 0;
+          background-color: #181818; }
+          /* line 842, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #topName p {
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+            padding-top: 16.5px; }
+        /* line 854, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #sessionsAround {
+          width: 100%;
+          margin-top: 90px; }
+          /* line 859, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 870, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 877, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.inActive {
+            display: none; }
+          /* line 881, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.active {
+            width: 100%; }
+            /* line 885, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1 {
+              width: 90%;
+              font-weight: 600;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+            /* line 895, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1:hover {
+              background-color: #ccc; }
+            /* line 899, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session .filet {
+              width: 90%;
+              height: 1px;
+              margin-left: 5%;
+              background-color: #C0C0C0; }
+          /* line 907, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.inActive {
+            display: none; }
+          /* line 911, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.active {
+            width: 100%; }
+            /* line 914, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #noSessionsAround.active h1 {
+              width: 85%;
+              font-weight: 400;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+        /* line 930, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #createNewSession {
+          width: 100%;
+          margin-top: 70px;
+          height: 20px; }
+          /* line 935, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 944, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 951, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession input[type="input"] {
+            margin-top: 15px;
+            z-index: 9999;
+            width: 85%;
+            position: absolute;
+            color: #111;
+            margin-left: 7.5%;
+            left: -10px;
+            padding: 15px 10px 15px 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            outline: none;
+            font-size: 16px;
+            background-color: white;
+            border: 0px; }
+          /* line 972, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession #createButton {
+            width: 85%;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            margin-left: 7.5%;
+            left: -10px;
+            position: absolute;
+            margin-top: 80px;
+            background-color: #111;
+            text-align: center; }
+            /* line 986, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #createNewSession #createButton h1 {
+              font-size: 16px;
+              color: white;
+              margin-left: -10px; } }
+
+
+
+
+
+
+
+
+/* Android landscape */
+@media only screen and (min-device-width: 321px) and (max-device-width: 640px) and (min-aspect-ratio: 13 / 9) {
+  /* line 1009, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+  html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F0F0F0; }
+    /* line 1015, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+    html body {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #F0F0F0; }
+      html body #loading.inActive {
+        display: none;}
+      html body #loading.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #181818;  
+        text-align: center;
+      }
+      html body #loading.active h1 {
+        font-size: 16px;
+        color: white;
+        margin-top: 100px;
+      }
+      /* line 1021, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #opacityLayer.inActive {
+        display: none; }
+      /* line 1025, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #opacityLayer.active {
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        opacity: 0.97;
+        position: absolute; }
+        /* line 1034, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.inActive {
+          display: none; }
+        /* line 1038, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.active {
+          overflow-y: scroll;
+          width: 100%;
+          height: 100%;
+          background-color: #111;
+          opacity: 0.97;
+          position: absolute; }
+        /* line 1050, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.inActive {
+          display: none; }
+        /* line 1054, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.active {
+          z-index: 9999999;
+          width: 100%;
+          margin-top: 55px;
+          position: absolute;
+          color: white; }
+          /* line 1064, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .song {
+            width: 90%;
+            float: left;
+            height: 55px;
+            margin-bottom: 10px;
+            margin-left: 5%; }
+          /* line 1074, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .song:hover {
+            background-color: #FF6600; }
+          /* line 1078, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .cover {
+            float: left; }
+          /* line 1082, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active h1 {
+            float: left;
+            max-width: 450px;
+            margin-top: 10px;
+            vertical-align: middle;
+            margin-left: 10px; }
+      /* line 368, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #wrapper.scroll {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      /* line 374, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #wrapper.noScroll {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+      /* line 1101, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #home.inActive {
+        display: none; }
+      /* line 1105, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #home.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 0;
+        background-color: #F0F0F0; }
+        /* line 1111, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #home.active #powered_by {
+          width: 50%;
+          height: 100px;
+          position: absolute;
+          margin-top: 90px;
+          text-align: center; }
+          /* line 1120, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #powered_by h1 {
+            font-size: 14px;
+            color: #222;
+            font-weight: 400; }
+          /* line 1126, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #powered_by #soundclod_logo {
+            width: 140px;
+            height: 80px;
+            position: absolute;
+            margin-left: 50%;
+            left: -70px;
+            margin-top: 15px;
+            background: url("../images/sc_dark.png");
+            background-size: cover; }
+        /* line 1138, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #home.active #enter {
+          width: 50%;
+          height: 120px;
+          position: absolute;
+          margin-top: 90px;
+          margin-left: 45%; }
+          /* line 1148, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #enter #sign_up {
+            width: 250px;
+            height: 45px;
+            background-color: #F0F0F0;
+            position: absolute;
+            margin-left: 50%;
+            left: -125px; }
+            /* line 1159, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #home.active #enter #sign_up input[type="input"] {
+              width: 100%;
+              position: absolute;
+              color: #181818;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              -webkit-box-sizing: content-box;
+              -moz-box-sizing: content-box;
+              outline: none;
+              font-size: 16px;
+              background-color: white;
+              border: transparent;
+              padding-top: 10px;
+              padding-bottom: 12px;
+              text-align: center; }
+            /* line 1180, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #home.active #enter #sign_up ::-webkit-input-placeholder {
+              color: #777;
+              text-align: center; }
+          /* line 1186, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #enter #log_in {
+            margin-top: 75px;
+            width: 250px;
+            height: 45px;
+            position: absolute;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6600), color-stop(100%, #ff3300));
+            position: absolute;
+            margin-left: 50%;
+            left: -125px;
+            text-align: center; }
+            /* line 1198, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #home.active #enter #log_in h1 {
+              margin-top: 13px;
+              font-size: 16px;
+              color: #F0F0F0; }
+      /* line 1210, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #sessionPage.inActive {
+        display: none; }
+      /* line 1214, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #sessionPage.active {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden; }
+        /* line 1221, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.inActive {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          top: 0;
+          height: 50px; }
+          /* line 1229, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #partyName {
+            display: none; }
+          /* line 1232, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #addSongs {
+            display: none; }
+        /* line 1237, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.active {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          top: 0;
+          height: 50px; }
+          /* line 1246, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #exit {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url("../images/exit6.png");
+            background-size: cover; }
+          /* line 1255, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #partyName {
+            width: 65%;
+            margin-left: 50px;
+            position: absolute; }
+            /* line 1261, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #partyName h1 {
+              padding-top: 16px;
+              color: #202020;
+              font-weight: 700;
+              font-size: 17px; }
+          /* line 1270, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.active #addSongs {
+            float: right;
+            width: 50px;
+            height: 50px; }
+            /* line 1277, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.active {
+              height: 25px;
+              width: 25px;
+              position: absolute;
+              margin-left: 10px;
+              margin-top: 14px;
+              background: url(../images/add4.png);
+              background-size: cover; }
+            /* line 1287, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #top.active #addSongs #addSongsIcon.inActive {
+              display: none; }
+        /* line 1293, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.inActive {
+          display: none; }
+        /* line 1296, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #noSongs.active {
+          width: 50%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 1302, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #noSongs.active h1 {
+            margin-top: 174px;
+            font-size: 20px;
+            color: #909090; }
+        /* line 1311, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.inActive {
+          display: none; }
+        /* line 1315, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #songs.active {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          text-align: center; }
+          /* line 1322, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #songText {
+            width: 60%;
+            position: absolute;
+            margin-top: 80px;
+            margin-left: 35%; }
+            /* line 1329, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h1 {
+              padding-top: 10px;
+              padding-left: 5%;
+              padding-right: 5%;
+              font-weight: 700;
+              font-size: 17px;
+              color: #202020;
+              line-height: 20px; }
+            /* line 1339, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #sessionPage.active #songs.active #songText h2 {
+              padding-top: 7px;
+              padding-left: 5%;
+              padding-right: 5%;
+              padding-bottom: 15px;
+              font-size: 15px;
+              color: #888888;
+              font-weight: 600; }
+          /* line 1351, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #cover {
+            width: 210px;
+            height: 210px;
+            margin-top: 50px;
+            position: absolute;
+            
+
+            background-size: cover; }
+          /* line 1361, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #margin {
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            bottom: 50px;
+            background-color: #F0F0F0; }
+          /* line 1369, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #soundwave {
+            z-index: 9999;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            
+            background-size: 100% 200%; }
+          /* line 1382, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #background {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            background-color: #202020; }
+          /* line 1390, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #songs.active #progress {
+            width: 0%;
+            position: absolute;
+            bottom: 0px;
+            height: 50px;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3300), color-stop(41%, #ff6600), color-stop(55%, #ff6600), color-stop(100%, #ff3300)); }
+        /* line 1400, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #bottom_menu {
+          width: 60%;
+          height: 50px;
+          margin-left: 35%;
+          margin-top: 160px;
+          position: absolute; }
+          /* line 1411, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #dislike {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/dislikeBlack.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+          /* line 1421, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #like {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/likeBlack.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+          /* line 1430, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #audio {
+            width: 27px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/audioOFFblack.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+          /* line 1439, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #bottom_menu #refresh {
+            width: 23px;
+            padding-bottom: 23px;
+            float: left;
+            background: url("../images/refreshBlack2.png");
+            background-size: cover;
+            margin-top: 14px;
+            margin-left: 15%; }
+      /* line 1452, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #searchPage.inActive {
+        display: none; }
+      /* line 1456, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #searchPage.active {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        background-color: #f0f0f0;
+        z-index: 999999; }
+        /* line 1463, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ul {
+          margin-top: 10px; }
+        /* line 1467, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #searchIcon {
+          position: absolute;
+          z-index: 99999999;
+          width: 20px;
+          height: 20px;
+          background: url("../images/searchIcon.png");
+          background-size: cover;
+          margin-top: 5px;
+          margin-left: 2%; }
+        /* line 1482, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-webkit-search-decoration,
+        html body #searchPage.active input[type="search"]::-webkit-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-button,
+        html body #searchPage.active input[type="search"]::-webkit-search-results-decoration {
+          display: none; }
+        /* line 1489, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"]::-mox-search-decoration,
+        html body #searchPage.active input[type="search"]::-moz-search-cancel-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-button,
+        html body #searchPage.active input[type="search"]::-moz-search-results-decoration {
+          display: none; }
+        /* line 1494, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active ::-webkit-input-placeholder {
+          color: #777; }
+        /* line 1501, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #input {
+          padding-top: 1px;
+          font-weight: 600;
+          font-size: 17px; }
+        /* line 1511, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active input[type="search"] {
+          z-index: 9999;
+          width: 70%;
+          float: left;
+          color: #222;
+          font-weight: 600;
+          font-size: 17px;
+          margin-left: 50px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          outline: none;
+          background-color: transparent;
+          border: 0px; }
+        /* line 1529, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #searchPage.active #closeSearch {
+          z-index: 99999999999999;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 2%;
+          margin-top: 4px;
+          background: url(../images/closeSearch.png);
+          background-size: cover; }
+      /* line 1545, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #create_joinPage.inActive {
+        display: none; }
+      /* line 1549, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #create_joinPage.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #f0f0f0; }
+        /* line 1555, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #topName {
+          display: none;
+          width: 100%;
+          height: 50px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          background-color: #181818; }
+          /* line 1564, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #topName p {
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+            padding-top: 16.5px; }
+        /* line 1576, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #sessionsAround {
+          width: 50%;
+          float: left;
+          margin-top: 90px; }
+          /* line 1582, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 1593, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 1600, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.inActive {
+            display: none; }
+          /* line 1604, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #sessionsOn.active {
+            width: 100%; }
+            /* line 1608, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1 {
+              width: 90%;
+              font-weight: 600;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+            /* line 1618, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session h1:hover {
+              background-color: #ccc; }
+            /* line 1622, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #sessionsOn.active .session .filet {
+              width: 90%;
+              height: 1px;
+              margin-left: 5%;
+              background-color: #C0C0C0; }
+          /* line 1630, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.inActive {
+            display: none; }
+          /* line 1634, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #sessionsAround #noSessionsAround.active {
+            width: 100%; }
+            /* line 1637, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #sessionsAround #noSessionsAround.active h1 {
+              width: 85%;
+              font-weight: 400;
+              font-size: 17px;
+              color: #111;
+              padding-top: 17px;
+              padding-bottom: 17px; }
+        /* line 1653, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #create_joinPage.active #createNewSession {
+          width: 50%;
+          float: left;
+          margin-top: 90px; }
+          /* line 1659, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession h1 {
+            font-weight: 400;
+            font-size: 13px;
+            color: #ff6600;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-weight: 600; }
+          /* line 1668, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession .filet {
+            width: 90%;
+            height: 1px;
+            margin-left: 5%;
+            background-color: #ff6600; }
+          /* line 1675, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession input[type="input"] {
+            margin-top: 15px;
+            z-index: 9999;
+            width: 80%;
+            color: #111;
+            margin-left: 5%;
+            left: -10px;
+            padding: 15px 10px 15px 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            outline: none;
+            font-size: 16px;
+            background-color: white;
+            border: 0px; }
+          /* line 1696, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #create_joinPage.active #createNewSession #createButton {
+            width: 80%;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            margin-left: 5%;
+            left: -10px;
+            margin-top: 20px;
+            background-color: #111;
+            text-align: center; }
+            /* line 1710, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #create_joinPage.active #createNewSession #createButton h1 {
+              font-size: 16px;
+              color: white;
+              margin-left: -10px; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPhone 5 Portrait ---------------------------------------------------------------- */
+@media only screen  and (min-device-width: 320px) and (max-device-width: 640px) and (device-height: 568px) and (max-aspect-ratio: 13 / 9) {
+  /* line 283, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+  html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F0F0F0; }
+    /* line 289, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+    html body {
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+      html body #loading.inActive {
+        display: none;}
+      html body #loading.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #181818;  
+        text-align: center;
+      }
+      html body #loading.active h1 {
+        font-size: 16px;
+        color: white;
+        margin-top: 100px;
+      }
+      /* line 295, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #opacityLayer.inActive {
+        display: none; }
+      /* line 299, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #opacityLayer.active {
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        opacity: 0.97;
+        position: absolute; }
+        /* line 308, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.inActive {
+          display: none; }
+        /* line 312, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #searchResults.active {
+          overflow-y: scroll;
+          width: 100%;
+          height: 100%;
+          background-color: #111;
+          opacity: 0.97;
+          position: absolute; }
+        /* line 324, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.inActive {
+          display: none; }
+        /* line 328, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #opacityLayer.active #resultsList.active {
+          z-index: 9999999;
+          width: 100%;
+          margin-top: 55px;
+          position: absolute;
+          color: white; }
+          /* line 338, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .song {
+            width: 90%;
+            float: left;
+            height: 55px;
+            margin-bottom: 10px;
+            margin-left: 5%; }
+          /* line 348, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+         
+          /* line 352, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active .cover {
+            float: left; }
+          /* line 356, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #opacityLayer.active #resultsList.active h1 {
+            float: left;
+            max-width: 250px;
+            margin-top: 10px;
+            vertical-align: middle;
+            margin-left: 10px; }
+      /* line 368, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #wrapper.scroll {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      /* line 374, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #wrapper.noScroll {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+      /* line 381, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #home.inActive {
+        display: none; }
+      /* line 385, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #home.active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #F0F0F0; }
+        /* line 391, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #home.active #powered_by {
+          width: 100%;
+          height: 100px;
+          position: absolute;
+          margin-left: 0;
+          margin-top: 100px;
+          text-align: center; }
+          /* line 400, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #powered_by h1 {
+            font-size: 14px;
+            color: #222;
+            font-weight: 400; }
+          /* line 406, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #powered_by #soundclod_logo {
+            width: 140px;
+            height: 80px;
+            position: absolute;
+            margin-left: 50%;
+            left: -70px;
+            margin-top: 15px;
+            background: url("../images/sc_dark.png");
+            background-size: cover; }
+        /* line 418, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #home.active #enter {
+          width: 100%;
+          height: 120px;
+          position: absolute;
+          margin-left: 0;
+          margin-top: 350px; }
+          /* line 428, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #enter #sign_up {
+            width: 70%;
+            height: 45px;
+            background-color: #F0F0F0;
+            position: absolute;
+            margin-left: 15%; }
+            /* line 439, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #home.active #enter #sign_up input[type="input"] {
+              width: 100%;
+              position: absolute;
+              color: #181818;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              -webkit-box-sizing: content-box;
+              -moz-box-sizing: content-box;
+              outline: none;
+              font-size: 16px;
+              background-color: white;
+              border: transparent;
+              padding-top: 10px;
+              padding-bottom: 12px;
+              text-align: center; }
+            /* line 460, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #home.active #enter #sign_up ::-webkit-input-placeholder {
+              color: #777;
+              text-align: center; }
+          /* line 466, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #home.active #enter #log_in {
+            margin-top: 75px;
+            width: 70%;
+            height: 45px;
+            position: absolute;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6600), color-stop(100%, #ff3300));
+            position: absolute;
+            margin-left: 15%;
+            text-align: center; }
+            /* line 478, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+            html body #home.active #enter #log_in h1 {
+              font-size: 16px;
+              margin-top: 13px;
+              color: #F0F0F0; }
+      /* line 490, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #sessionPage.inActive {
+        display: none; }
+      /* line 494, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+      html body #sessionPage.active {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 100%;
+        position: absolute; }
+        /* line 500, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.inActive {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          top: 0;
+          height: 50px; }
+          /* line 508, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #partyName {
+            display: none; }
+          /* line 511, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+          html body #sessionPage.active #top.inActive #addSongs {
+            display: none; }
+        /* line 516, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
+        html body #sessionPage.active #top.active {
+          position: fixed;
+          z-index: 999;
+          width: 100%;
+          top: 0;
+          background-color: #F0F0F0;
           height: 50px; }
           /* line 525, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #sessionPage.active #top.active #exit {
@@ -819,18 +2951,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 
 
-@media only screen and (min-device-width: 321px) and (max-device-width: 640px) and (min-aspect-ratio: 13 / 9) {
+
+
+
+
+
+
+/* iPhone 5 landscape --------------------------------------------------------- */
+/* Android landscape */
+@media only screen and (min-device-width: 320px)  and (max-device-width: 640px) and (device-height: 568px) and (min-aspect-ratio: 13 / 9) {
   /* line 1009, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
   html {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: #181818; }
+    background-color: #F0F0F0; }
     /* line 1015, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
     html body {
       width: 100%;
       height: 100%;
-      position: absolute; }
+      position: absolute;
+      background-color: #F0F0F0; }
       html body #loading.inActive {
         display: none;}
       html body #loading.active {
@@ -885,15 +3026,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
             margin-bottom: 10px;
             margin-left: 5%; }
           /* line 1074, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
-          html body #opacityLayer.active #resultsList.active .song:hover {
-            background-color: #FF6600; }
+          
           /* line 1078, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #opacityLayer.active #resultsList.active .cover {
             float: left; }
           /* line 1082, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #opacityLayer.active #resultsList.active h1 {
             float: left;
-            max-width: 450px;
+            max-width: 500px;
             margin-top: 10px;
             vertical-align: middle;
             margin-left: 10px; }
@@ -916,7 +3056,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: #181818; }
+        margin-top: 0;
+        background-color: #F0F0F0; }
         /* line 1111, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
         html body #home.active #powered_by {
           width: 50%;
@@ -927,7 +3068,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           /* line 1120, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by h1 {
             font-size: 14px;
-            color: #F0F0F0;
+            color: #222;
             font-weight: 400; }
           /* line 1126, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #home.active #powered_by #soundclod_logo {
@@ -965,7 +3106,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
               -moz-box-sizing: content-box;
               outline: none;
               font-size: 16px;
-              background-color: transparent;
+              background-color: white;
               border: transparent;
               padding-top: 10px;
               padding-bottom: 12px;
@@ -1019,6 +3160,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           z-index: 999;
           width: 100%;
           top: 0;
+          background-color: #F0F0F0;
           height: 50px; }
           /* line 1246, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #sessionPage.active #top.active #exit {
@@ -1060,13 +3202,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           display: none; }
         /* line 1296, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
         html body #sessionPage.active #noSongs.active {
-          width: 100%;
+          width: 50%;
           height: 100%;
           position: absolute;
           text-align: center; }
           /* line 1302, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */
           html body #sessionPage.active #noSongs.active h1 {
-            margin-top: 250px;
+            margin-top: 174px;
             font-size: 20px;
             color: #909090; }
         /* line 1311, /Users/Uri/D+T/Web3/Playlist/final_v2/middleman/playlist/source/stylesheets/style.css.scss */

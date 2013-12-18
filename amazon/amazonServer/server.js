@@ -158,6 +158,17 @@ socketServer.sockets.on('connection', function(socket){
 
     })
 
+
+    // Recieve computer joins session
+    socket.on('desktop joinning session', function(userData){
+        sessionRoom = userData.session_ID;
+
+        socket.join(userData.session_ID);
+        socket.join(userData.session_ID);
+        socket.emit('success joinning session for desktop');
+
+
+    });
     
     var song_to_play;
     
@@ -173,117 +184,126 @@ socketServer.sockets.on('connection', function(socket){
         sessions.findOne({session_ID : song_info.session_ID}, function(err, result){
             if (err) throw err;
 
-            songs_queue = result.songs.length;
-            console.log(songs_queue);
 
-            // if there is no songs on the db add this one and start playing
-            if (songs_queue == 0) {
-                // Add song to the db
-                sessions.update({session_ID: song_info.session_ID }, 
-                    {'$push':{songs: { song_url: song_info.url, 
-                                        song_waveform: song_info.waveform,
-                                        song_duration: song_info.duration,
-                                        song_name: song_info.songName,
-                                        song_cover: song_info.cover,
-                                        song_username: song_info.username}}}, function(err){
+            if (result == null) {
+                console.log('bug fixed!');
+                socket.emit('song not added / session removed');
+            } else {
 
-                    if (err) throw err;
-                    console.log('first song added!');
+                songs_queue = result.songs.length;
+                console.log(songs_queue);
 
-                    play();
+                // if there is no songs on the db add this one and start playing
+                if (songs_queue == 0) {
+                    // Add song to the db
+                    sessions.update({session_ID: song_info.session_ID }, 
+                        {'$push':{songs: { song_url: song_info.url, 
+                                            song_waveform: song_info.waveform,
+                                            song_duration: song_info.duration,
+                                            song_name: song_info.songName,
+                                            song_cover: song_info.cover,
+                                            song_username: song_info.username}}}, function(err){
 
-                    
+                        if (err) throw err;
+                        console.log('first song added!');
 
-                    function play(){
+                        play();
+
                         
-                        
-                       
 
-                        // Go find the first song on the db
-                        sessions.findOne({session_ID : song_info.session_ID}, function(err, result){
-                            if (err) throw err;
-
-                            if (result == null) {
-                                console.log('result of first song undefined');
-                            }
-
-                            else if (result.songs.length >= 1) {
+                        function play(){
                             
-                                song_to_play = result.songs[0];
-                                
-                                //console.log(song_to_play.song_duration);
-                                // Send the song to play to all users
-                                socket.emit('play this song', song_to_play);
-                                var song_date = new Date().getTime();
-                                sessions.update({session_ID: song_info.session_ID },
-                                        {'$set':{date : song_date}}, function(err){
-                                            if (err) throw err;
-                                            console.log('date added!')
-                                });
+                            
+                           
 
+                            // Go find the first song on the db
+                            sessions.findOne({session_ID : song_info.session_ID}, function(err, result){
+                                if (err) throw err;
 
-
-                                socket.broadcast.to(song_info.session_ID).emit('play this song', song_to_play);
-                                console.log( song_to_play.song_name + ' start playing');
+                                if (result == null) {
+                                    console.log('result of first song undefined');
+                                }
 
                                 
-                                setTimeout(function(){
-
-                                    // Delete song from db and play next
+                                
+                                else if (result.songs.length >= 1) {
+                                
+                                    song_to_play = result.songs[0];
+                                    
+                                    //console.log(song_to_play.song_duration);
+                                    // Send the song to play to all users
+                                    socket.emit('play this song', song_to_play);
+                                    var song_date = new Date().getTime();
                                     sessions.update({session_ID: song_info.session_ID },
-                                        {'$pull':{songs: {song_name: song_to_play.song_name}}}, function(err){
-                                            if (err) throw err;
-                                            console.log('song removed');
-                                            console.log(song_to_play.song_name);
-                                            // clearInterval(songPositionInterval);
-                                            // songPosition = null;
-                                            play();
-                                        });
+                                            {'$set':{date : song_date}}, function(err){
+                                                if (err) throw err;
+                                                console.log('date added!')
+                                    });
 
-                                }, song_to_play.song_duration + 1000);
+
+
+                                    socket.broadcast.to(song_info.session_ID).emit('play this song', song_to_play);
+                                    console.log( song_to_play.song_name + ' start playing');
+
+                                    
+                                    setTimeout(function(){
+
+                                        // Delete song from db and play next
+                                        sessions.update({session_ID: song_info.session_ID },
+                                            {'$pull':{songs: {song_name: song_to_play.song_name}}}, function(err){
+                                                if (err) throw err;
+                                                console.log('song removed');
+                                                console.log(song_to_play.song_name);
+                                                // clearInterval(songPositionInterval);
+                                                // songPosition = null;
+                                                play();
+                                            });
+
+                                    }, song_to_play.song_duration + 1000);
+
+                                    
+                                    // var songPosition_increment = 1000;
+                                    // // Set interval for refreshing session
+                                    // var songPositionInterval = setInterval(function(){
+
+                                    //     songPosition = songPosition + songPosition_increment;
+                                    //     console.log(songPosition);
+
+                                    // }, songPosition_increment);
+
 
                                 
-                                // var songPosition_increment = 1000;
-                                // // Set interval for refreshing session
-                                // var songPositionInterval = setInterval(function(){
+                                } else {
+                                    console.log('no more songs on queue');
+                                    socket.emit('no more songs on queue');
+                                    socket.broadcast.to(song_info.session_ID).emit('no more songs on queue');
+                                    song_to_play = 0;
+                                }
 
-                                //     songPosition = songPosition + songPosition_increment;
-                                //     console.log(songPosition);
-
-                                // }, songPosition_increment);
-
-
-                            
-                            } else {
-                                console.log('no more songs on queue');
-                                socket.emit('no more songs on queue');
-                                socket.broadcast.to(song_info.session_ID).emit('no more songs on queue');
-                                song_to_play = 0;
-                            }
-
-                        });
+                            });
 
 
-                    }
-                });
+                        }
+                    });
 
-            } else { // There is a song already playing so just update db
-                 // Add song to the db
-                sessions.update({session_ID: song_info.session_ID }, 
-                    {'$push':{songs: { song_url: song_info.url, 
-                                        song_waveform: song_info.waveform,
-                                        song_duration: song_info.duration,
-                                        song_name: song_info.songName,
-                                        song_cover: song_info.cover,
-                                        song_username: song_info.username}}}, function(err){
+                } else { // There is a song already playing so just update db
+                     // Add song to the db
+                    sessions.update({session_ID: song_info.session_ID }, 
+                        {'$push':{songs: { song_url: song_info.url, 
+                                            song_waveform: song_info.waveform,
+                                            song_duration: song_info.duration,
+                                            song_name: song_info.songName,
+                                            song_cover: song_info.cover,
+                                            song_username: song_info.username}}}, function(err){
 
-                    if (err) throw err;
-                    console.log('another song added!');
+                        if (err) throw err;
+                        console.log('another song added!');
 
-                });
-            }
+                    });
+                }   
+            } // end of if result
 
-        });
+        }); 
     })
 
     
@@ -294,7 +314,11 @@ socketServer.sockets.on('connection', function(socket){
         sessions.findOne({session_ID : userData.session_ID}, function(err, result){
             var date = new Date().getTime();
             if (err) throw err;
-            if (result.songs[0] == null) {
+            if (result == null) {
+                console.log('Bug fixed!');
+                socket.emit('session removed');
+            }
+            else if (result.songs[0] == null) {
                 console.log('no songs on queue');
                 socket.emit('success refreshing / no songs on queue');
             } else {
@@ -356,6 +380,6 @@ socketServer.sockets.on('connection', function(socket){
 // css media queries iphone 4
 // desktop version -- server prepared for another index!
 
-
+// the bug is because play gets called after the session have been removed
 
 

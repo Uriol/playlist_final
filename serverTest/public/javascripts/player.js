@@ -47,6 +47,7 @@ var songPlaying;
 // restart progress bar
 function restartProgressBar(){
 	clearInterval(progressBarInterval);
+	clearInterval(progressBarInterval_onRefresh);
 	$('#progress').css('width', '0%');
 }
 
@@ -98,10 +99,10 @@ var progressBarInterval_onRefresh ;
 // Recieve success refreshing 
 socket.on('succes refreshing', function(firstSong, song_date, date){
 
-		if (songsPlaying == true){
+		//if (songsPlaying == true){
 			
 			restartProgressBar();
-		}
+		//}
 
 		songsPlaying == true;
 
@@ -189,6 +190,17 @@ function noMoreSongs(){
 	$('#noSongs').removeClass('inActive').addClass('active');
 	$('#songs').removeClass('active').addClass('inActive');
 }
+
+// Recieve song not added session removed
+socket.on('song not added / session removed', function(){
+	alert("The song couldn't be added because the session was removed. Refresh the page." );
+}) 
+
+// Recieve session removed on refresh
+socket.on('session removed', function(){
+	alert("This session was removed. Refresh the page.")
+})
+
 
 // var date = new Date().getTime();
 // console.log(date);

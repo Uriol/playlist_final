@@ -236,9 +236,10 @@ body {
 
 
 #songPlaying.active #song_info{
-	width: 60%;
+	width: 600px;
 	height: 200px;
-	margin-left: 20%;
+	margin-left: 50%;
+	left: -300px;
 	position: absolute;
 	margin-top: 200px;
 	
@@ -265,15 +266,15 @@ body {
 #songPlaying.active #song_info #songText h1{
 	font-weight: 400;
 	color: #222;
-	margin-top: 50px;
+	margin-top: 80px;
 	font-size: 25px;
-	padding-bottom: 15px;
+	padding-bottom: 30px;
 }
 
 #songPlaying.active #song_info #songText h2{
 	font-weight: 400;
-	color: #ccc;
-	margin-top: 50px;
+	color: #707070;
+	
 	font-size: 15px;
 	
 }
@@ -294,3 +295,10 @@ body {
 	height: 100px;
 }
 
+#songPlaying.active #progress{
+	position: absolute;
+	bottom: 0;
+	width: 0%;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3300), color-stop(41%, #ff6600), color-stop(55%, #ff6600), color-stop(100%, #ff3300)); 
+	height: 100px;
+}
